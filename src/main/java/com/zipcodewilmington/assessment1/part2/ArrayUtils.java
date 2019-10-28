@@ -1,5 +1,7 @@
 package com.zipcodewilmington.assessment1.part2;
 
+import java.util.ArrayList;
+
 /**
  * Created by leon on 2/16/18.
  */
@@ -26,15 +28,39 @@ public class ArrayUtils {
      * Given an array of objects, name `objectArray`, and an object `objectToRemove`, return an array of objects with identical contents excluding `objectToRemove`
      */
     public static Object[] removeValue(Object[] objectArray, Object objectToRemove) {
-        int counter = 0;
-        Object[] newArray = new Object[objectArray.length - 1];
-        for (Object removeObject : objectArray) {
-            if (!removeObject.equals(objectToRemove)) {
-                newArray[counter++] = removeObject;
-            }
-        }
-        return newArray;
+        return null;
     }
+//        Object count = 0;
+//        for ( int i = 0; i < objectArray.length; i++ ) {
+//            if(objectArray[i] != objectToRemove) {
+//                count + 1;
+//            } }
+//        Object[] newArr = new Object[count];
+//        for ( int i = 0, j = 0; i < objectArray.length; i++ ) {
+//            if(objectArray[i] != objectToRemove) {
+//                newArr[j++] = objectArray[i];
+//            } }
+//        return newArr;
+//}
+//        int index = 0;
+//        Object[] result = new Object[objectArray.length -1];
+//        for (int i = 0; i < objectArray.length; i++) {
+//            Object o = objectArray[i];
+//            if (o != objectToRemove) {
+//                result += result[\];
+//            }
+//            result[i] += result[objectArray-1-i];
+//        }
+//        return objArr;
+//        int counter = 0;
+//        Object[] newArray = new Object[objectArray.length - 1];
+//        for (Object removeObject : objectArray) {
+//            if (!removeObject.equals(objectToRemove)) {
+//                newArray[counter++] = removeObject;
+//            }
+//        }
+//        return newArray;
+
 
     /**
      * @param objectArray an array of any type of Object
