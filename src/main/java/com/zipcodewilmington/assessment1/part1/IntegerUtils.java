@@ -35,11 +35,11 @@ public class IntegerUtils {
      * @return integer with identical digits in the reverse order
      */
     public static Integer reverseDigits(Integer val) {
-        int revVal = 0;
+        int reverseVal = 0;
         while (val > 0) {
-            revVal = revVal * 10 + val % 10;
+            reverseVal = reverseVal * 10 + val % 10;
             val = val / 10;
         }
-        return revVal;
+        return reverseVal;
     }
 }
