@@ -11,7 +11,12 @@ public class ArrayUtils {
      * Given an array of objects, named `objectArray`, and an object `objectToCount`, return the number of times the `objectToCount` appears in the `objectArray`
      */
     public static Integer getNumberOfOccurrences(Object[] objectArray, Object objectToCount) {
-        return null;
+        int count = 0;
+        for (int i = 0; i < objectArray.length; i++) {
+            if (objectToCount == objectArray[i])
+                count++;
+        }
+        return count;
     }
 
     /**
@@ -21,7 +26,14 @@ public class ArrayUtils {
      * Given an array of objects, name `objectArray`, and an object `objectToRemove`, return an array of objects with identical contents excluding `objectToRemove`
      */
     public static Object[] removeValue(Object[] objectArray, Object objectToRemove) {
-        return null;
+        int counter = 0;
+        Object[] newArray = new Object[objectArray.length - 1];
+        for (Object removeObject : objectArray) {
+            if (!removeObject.equals(objectToRemove)) {
+                newArray[counter++] = removeObject;
+            }
+        }
+        return newArray;
     }
 
     /**
