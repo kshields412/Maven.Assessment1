@@ -6,14 +6,14 @@ public class Jumper {
      * Complete the function below.
      */
     public int jumps(int k, int j) {
-        // k = how high the jump
-        //j is jump height
+        // k = how high the jump is
+        //j = kangaroo jump height
         int counter = 0;
         for (int i = 0; i < k; i++) {
             if (k == j) {
                 break;
             }
-            else if (k != j){
+            else {
                 counter++;
             }
         }

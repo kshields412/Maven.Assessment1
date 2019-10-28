@@ -13,7 +13,17 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with evens removed
      */
     public Integer[] deleteEvens(Integer[] ints) {
-        return null;
+        List<Integer> result = new ArrayList<>();
+        for (int i: ints) {
+            if (i != (i % 2)) {
+                break;
+            }
+            else if (i == (i % 2)) {
+                result.add(i);
+            }
+        }
+        Integer[] outArr = result.toArray(new Integer[result.size()]);
+        return outArr;
     }
 
     /**
@@ -22,7 +32,14 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with odds removed
      */
     public Integer[] deleteOdds(Integer[] ints) {
-        return null;
+        List<Integer> result = new ArrayList<>();
+        for (int i = 0; i < ints.length; i++) {
+            if (i != (i % 2)) {
+                result.add(i);
+            }
+        }
+        Integer[] outArr = result.toArray(new Integer[result.size()]);
+        return outArr;
     }
 
     /**
@@ -31,15 +48,16 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with numbers indivisible by 3 removed
      */
     public Integer[] deleteMultiplesOf3(Integer[] ints) {
-        Integer[] newInts = new Integer[ints.length-1];
-        int count = 0;
-        for (int i = 0; i < ints.length; i++){
-            if (i % 3 == 0){
-                newInts[count++] += newInts[ints.length-1-i];
+        List<Integer> result = new ArrayList<>();
+        for (int i: ints) {
+            if (i != (i % 3)) {
+                result.add(i);
             }
         }
-        return newInts;
+        Integer[] outArr = result.toArray(new Integer[result.size()]);
+        return outArr;
     }
+
 
     /**
      * @param ints array of Integer objects
@@ -48,6 +66,14 @@ public class MultiplesDeleter {
      * given an array of integers, named `ints` return an identical array with numbers indivisible by `multiple` removed
      */
     public Integer[] deleteMultiplesOfN(Integer[] ints, int multiple) {
-        return null;
+        List<Integer> result = new ArrayList<>();
+        for (int i: ints) {
+            if (i != (i % 3)) {
+                result.add(i);
+            }
+        }
+        Integer[] outArr = result.toArray(new Integer[result.size()]);
+        return outArr;
     }
+
 }
